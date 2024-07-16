@@ -1,0 +1,12 @@
+{
+  "name": "@zenika/vue-formation-exercices",
+  "version": "1.0.0",
+  "description": "Exercices de la formation VueJs.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd resources/server-formation-vue && npm run start",
+    "postinstall": "cd resources/server-formation-vue && npm install"
+  },
+  "author": "Zenika",
+  "license": "ISC"
+}
