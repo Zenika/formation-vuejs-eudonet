@@ -44,39 +44,25 @@
   </div>
 </template>
 
-<script>
-import { defineComponent, ref, computed } from 'vue'
+<script setup>
+import { ref, computed } from 'vue'
 import CardShow from '@/components/CardShow.vue'
 import data from '@/../../../resources/server-formation-vue/shows'
 
-export default defineComponent({
-  components: {
-    CardShow,
-  },
-  setup() {
-    const title = 'My TV shows'
-    const shows = ref(data)
-    const searchTerm = ref('')
+const title = 'My TV shows'
+const shows = ref(data)
+const searchTerm = ref('')
 
-    const filteredShows = computed(() =>
-      shows.value.filter((show) =>
-        show.title
-          .toUpperCase()
-          .includes(searchTerm.value.toUpperCase())
-      )
-    )
+const filteredShows = computed(() =>
+  shows.value.filter((show) =>
+    show.title
+    .toUpperCase()
+    .includes(searchTerm.value.toUpperCase())
+  )
+)
 
-    function toggleFavorite(show) {
-      console.log(`${show.title} toggled favorite state`)
-      show.user.favorited = !show.user.favorited
-    }
-
-    return {
-      title,
-      searchTerm,
-      filteredShows,
-      toggleFavorite,
-    }
-  },
-})
+function toggleFavorite(show) {
+  console.log(`${show.title} toggled favorite state`)
+  show.user.favorited = !show.user.favorited
+}
 </script>
