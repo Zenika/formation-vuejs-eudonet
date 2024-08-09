@@ -1,0 +1,32 @@
+[
+  {
+    "id": 744,
+    "title": "The Vampire Diaries",
+    "description": "As the school year begins, Elena Gilbert is immediately drawn to a handsome and mysterious new student, Stefan Salvatore. Elena has no way of knowing that Stefan is a vampire struggling to live peacefully among humans, while his brother Damon is the embodiment of vampire violence and brutality.",
+    "seasons": "8",
+    "creation": "2009",
+    "genres": ["Drama", "Fantasy", "Horror", "Romance"],
+    "status": "Ended",
+    "images": {
+      "poster": "/posters/the-vampire-diaries.jpg"
+    },
+    "user": {
+      "favorited": false
+    }
+  },
+  {
+    "id": 12742,
+    "title": "Stranger Things",
+    "description": "Tribute to the classic supernatural mysteries of the 80s, 'Stranger Things' is the story of a boy who disappears in the small town of Hawkins, Indiana, without a trace in 1983. In his desperate search, both his friends and family and the local sheriff are involved in an extraordinary enigma: top-secret experiments, terrifying paranormal forces and a very, very rare girl ...",
+    "seasons": "3",
+    "creation": "2016",
+    "genres": ["Adventure", "Drama", "Fantasy", "Horror", "Mystery"],
+    "status": "Continuing",
+    "images": {
+      "poster": "/posters/stranger-things.jpg"
+    },
+    "user": {
+      "favorited": false
+    }
+  }
+]
